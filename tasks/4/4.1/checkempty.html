@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let schedule = {};
+
+    alert(isEmpty(schedule)); // true
+
+    schedule["8:30"] = "get up";
+
+    alert(isEmpty(schedule)); // false
+
+    function isEmpty(obj) {
+        for (let key in obj) return true;
+        return false;
+    }
+</script>
+</body>
+</html>
