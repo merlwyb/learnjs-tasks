@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getSecondsToTomorrow() {
+        let now = new Date();
+        let tommorow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+
+        return Math.round((tommorow - now)/1000)
+    }
+
+    alert(getSecondsToTomorrow());
+</script>
+</body>
+</html>
