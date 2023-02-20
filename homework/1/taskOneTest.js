@@ -1,4 +1,5 @@
-import {transformString, uniqueWordCount, uppercaseFirst, wordCount} from './taskOne';
+const {transformString, uniqueWordCount, uppercaseFirst, wordCount} = require('./taskOne');
+const assert = require("assert");
 
 describe("1.1. Преобразование строки к нижнему регистру, но первая буква большая.",
     function () {

@@ -1,6 +1,6 @@
 // 1. Написать модуль, который будет включать в себя следующие методы.
 // 1.1. Преобразование строки к нижнему регистру, но первая буква большая.
-export function uppercaseFirst(str) {
+function uppercaseFirst(str) {
     if (str === null || str === undefined)
         return "";
     if (str.length === 0)
@@ -9,7 +9,7 @@ export function uppercaseFirst(str) {
 }
 
 // 1.2. Преобразование строки с целью правильно расстановки пробелов.
-export function transformString(str) {
+function transformString(str) {
     if (str === null || str === undefined)
         return "";
     let editedStr = str
@@ -19,14 +19,14 @@ export function transformString(str) {
 }
 
 // 1.3. Посдчитывающие кол-во слов в строке.
-export function wordCount(str) {
+function wordCount(str) {
     if (str === null || str === undefined)
         return 0;
     return str.trim().split(' ').length;
 }
 
 // 1.4. Подсчитывающий, уникальные слова.
-export function uniqueWordCount(str) {
+function uniqueWordCount(str) {
     if (str === null || str === undefined || str.trim().length === 0)
         return "";
     let arr = str
@@ -52,3 +52,5 @@ export function uniqueWordCount(str) {
 
     return resultArr.join(', ');
 }
+
+module.exports = {transformString, uniqueWordCount, uppercaseFirst, wordCount}
